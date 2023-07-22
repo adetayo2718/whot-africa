@@ -70,8 +70,6 @@ const cardDetail:cardDetailType[] = [
         }  
     ]
 
-
-
 const LadningPage = () => (
     <>
         {/* Fist-Page */}
