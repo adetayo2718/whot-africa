@@ -1,5 +1,4 @@
-import Cards from './Card';
-import Card from './Card'
+import Cards from './SectonCard';
 import './style.scss'
 
 const LadningPage = () => (

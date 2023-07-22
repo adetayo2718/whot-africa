@@ -1,6 +1,4 @@
 
-
-
 const Cards = ({cardImg}:any) => {
     return ( 
         <div className="">
