@@ -1,0 +1,153 @@
+
+.index-section{
+    background-image: url("https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689495410/Background_1_jwwzie.png");
+    background-size: cover;
+    min-height: 100vh;
+    
+    .app-image{
+        margin-right: 1rem;
+    }
+
+    .image{
+        margin-top: 7rem;
+    }
+
+    .background-text{
+        top: 30%;
+        color: #FFFFFF;  
+    }
+}
+
+.our-game{
+    background-image: url('https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689495628/Background_2_jyiarv.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    
+    .h1-text{
+        color: #FFFFFF;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .card_container{
+        
+        img{
+            max-width: 88%;
+        }
+
+        .card-title{
+            color: #FFFFFF;
+        }
+        
+        .card-text{
+            color: #FFFFFF;
+            max-width: 70%;
+        }
+
+        .card_btn{
+            background-color:#42AA00;
+            color: #FFFFFF;
+            min-width: 60%;
+        }
+    }
+}
+
+.whole-tutorial-section{
+    background-image: url("https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689495836/Background_3_jqbu6v.png");
+    // background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+
+    .text{
+        color: #FFFFFF;
+        margin-top: 2rem;
+    }
+
+    .media-container{
+        margin-top: 6rem;
+    }
+
+    .container_video_text{
+        max-width: 65%;
+        height: 60%;
+        background-color: #FFFFFF;
+        margin-right: 0;
+        margin-left: 0.2rem;
+        }
+    .start-container{
+        max-width: 26%;
+        height: 50%;
+        margin-top: 1.5rem;
+        
+
+        .card{
+            border: none;
+            height: 115px;
+            background-color: #FFFFFF;
+
+            :hover{
+                background-color: #0D2100FA;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.whole-question-page{
+    background-image: url('https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689495628/Background_2_jyiarv.png');
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+
+    .question-text{
+        color: #FFFFFF;
+    }
+
+    img{
+        min-width: 35%;
+        height: 480px;
+        
+    }
+
+    .accordion-style{
+        min-width: 55%;
+        max-width: 50%;
+
+        .accordion-item{
+            padding: 0.2rem 0 0.2rem 0;
+            margin: 0.8rem 0 0.8rem 0;
+            border-radius: 8px;
+        }
+    }
+}
+
+.whole-contact-page{
+    background-image: url("https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689537302/Background_5_suykqj.png");
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+
+    .text{
+        color: #FFFFFF;
+    }
+
+    .form-text{
+        color: #FFFFFF;
+    }
+
+    .form-controls{
+        width: 40rem;
+    }
+
+    .form-style{
+        margin-top: 2rem;
+    }
+    .btn-style{
+        align-items: end;
+        background-color: #42AA00;
+        color: #FFFFFF;
+    }
+}
