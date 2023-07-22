@@ -1,6 +1,76 @@
 import FaqAccordion from './Accordion';
-import Cards from './SectonCard';
+import Card from './SectionThreeCard';
+import Cards from './SectonTwoCard';
 import './style.scss'
+
+type cardDetailType={
+    cardImg: string
+    cardAlt: string
+    cardTitle: string
+    cardText: string
+    cardBtn: string
+}
+const cardDetail:cardDetailType[] = [
+    {
+        cardTitle:'Traditional Whot',
+        cardText:'Enjoy a game of traditional whot and get your mind occupied. You can play alone or with your friends using the internet',
+        cardImg:'https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689196597/Rectangle_14_2_hdszcc.png',
+        cardAlt:'game-image',
+        cardBtn: 'Download'
+    },
+    {
+        cardTitle:'Traditional Whot',
+        cardText:'Enjoy a game of traditional whot and get your mind occupied. You can play alone or with your friends using the internet',
+        cardImg:'https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689194936/Rectangle_14_vgwuql.png',
+        cardAlt:'game-image',
+        cardBtn: 'Download'
+    },
+    {
+        cardTitle:'Traditional Whot',
+        cardText:'Enjoy a game of traditional whot and get your mind occupied. You can play alone or with your friends using the internet',
+        cardImg:'https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689196589/Rectangle_14_1_rctmea.png',
+        cardAlt:'game-image',
+        cardBtn: 'Download'
+    },
+    {
+        cardTitle:'Traditional Whot',
+        cardText:'Enjoy a game of traditional whot and get your mind occupied. You can play alone or with your friends using the internet',
+        cardImg:'https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689196589/Rectangle_14_1_rctmea.png',
+        cardAlt:'game-image',
+        cardBtn: 'Download'
+    },
+    {
+        cardTitle:'Traditional Whot',
+        cardText:'Enjoy a game of traditional whot and get your mind occupied. You can play alone or with your friends using the internet',
+        cardImg:'https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689196605/Rectangle_14_3_laerdp.png',
+        cardAlt:'game-image',
+        cardBtn: 'Download'
+    }];
+
+    type sectionThreeCardType = {
+        cardTitle: string
+        cardText: string
+    }
+    const sectionThreeCardDetail:sectionThreeCardType[] =[
+        {
+            cardTitle:'How to start a game',
+            cardText:'A brief showcase of how to enjoy the game with your friends'
+        },
+        {
+            cardTitle:'How to start a game',
+            cardText:'A brief showcase of how to enjoy the game with your friends'
+        },
+        {
+            cardTitle:'How to start a game',
+            cardText:'A brief showcase of how to enjoy the game with your friends'
+        },
+        {
+            cardTitle:'How to start a game',
+            cardText:'A brief showcase of how to enjoy the game with your friends'
+        }  
+    ]
+
+
 
 const LadningPage = () => (
     <>
@@ -33,24 +103,16 @@ const LadningPage = () => (
 
                 <div className="container card_container">
                     <div className='row g-4 d-flex justify-content-between'>
-                        <div className="col-4">
-                            <Cards cardImg = "https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689196597/Rectangle_14_2_hdszcc.png"/>
-                            
-                        </div>
-                        <div className="col-4">
-                            <Cards cardImg = "https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689194936/Rectangle_14_vgwuql.png" alt="game-image"/>
-                        </div>
-                        <div className="col-4">
-                            <Cards cardImg = "https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689196589/Rectangle_14_1_rctmea.png"/>
-                        </div>
-                    </div>
-                    <div className="row g-4 d-flex justify-content-space my-4">
-                        <div className="col-4">
-                            <Cards cardImg = "https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689196589/Rectangle_14_1_rctmea.png"/>
-                        </div>
-                        <div className="col-4">
-                            <Cards cardImg= "https://res.cloudinary.com/dvgkyxjsa/image/upload/v1689196605/Rectangle_14_3_laerdp.png" alt="game-image"/>
-                        </div>
+                        {cardDetail.map((element)=>(
+                            <div className="col-4">
+                            <Cards
+                            cardImg={element.cardImg}
+                            cardAlt={element.cardAlt}
+                            cardTitle={element.cardTitle}
+                            cardText={element.cardText}
+                            cardBtn = {element.cardBtn}
+                        /></div>))}
+                        
                     </div>
                 </div>
             </div>
@@ -84,54 +146,13 @@ const LadningPage = () => (
                     <div className="start-container">
                         <div className="row cards">
                             <div className="container">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <div className="card-title">
-                                            <h4>How to start a game</h4>
-                                        </div>
-                                        <div className="card-text">
-                                            <p>A brief showcase of how to enjoy the game with your friends</p>
-                                        </div>
-                                        <div className="card-title">
-                                            <h4>How to start a game</h4>
-                                        </div>
-                                        <div className="card-text">
-                                            <p>A brief showcase of how to enjoy the game with your friends</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="card">
-                                    <div className="card-body">
-                                        <div className="card-title">
-                                            <h4>How to start a game</h4>
-                                        </div>
-                                        <div className="card-text">
-                                            <p>A brief showcase of how to enjoy the game with your friends</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="card">
-                                    <div className="card-body">
-                                        <div className="card-title">
-                                            <h4>How to start a game</h4>
-                                        </div>
-                                        <div className="card-text">
-                                            <p>A brief showcase of how to enjoy the game with your friends</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="card">
-                                    <div className="card-body">
-                                        <div className="card-title">
-                                            <h4>How to start a game</h4>
-                                        </div>
-                                        <div className="card-text">
-                                            <p>A brief showcase of how to enjoy the game with your friends</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                {sectionThreeCardDetail.map((elem)=>(
+                                    <Card
+                                    cardTitle= {elem.cardTitle}
+                                    cardText= {elem.cardText}
+                                    />
+                                ))}
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -150,6 +171,8 @@ const LadningPage = () => (
 
                     <div className='px-4 accordion-style'>
                         <div className="accordion" id="game-questions ">
+                            <FaqAccordion/>
+                            <FaqAccordion/>
                             <FaqAccordion/>
                             <FaqAccordion/>
                             <FaqAccordion/>
