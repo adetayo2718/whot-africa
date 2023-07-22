@@ -175,7 +175,7 @@ const LadningPage = () => (
                             <FaqAccordion/>
                             <FaqAccordion/>
                             <FaqAccordion/>
-                            
+                            <>Change</>
                         </div>     
                     </div>
                 </div>
